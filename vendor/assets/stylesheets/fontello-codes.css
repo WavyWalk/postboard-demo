@@ -1,0 +1,14 @@
+
+.icon-resize-full:before { content: '\e800'; } /* '' */
+.icon-up-big:before { content: '\e801'; } /* '' */
+.icon-play:before { content: '\e802'; } /* '' */
+.icon-picture:before { content: '\e803'; } /* '' */
+.icon-thumbs-up-1:before { content: '\e805'; } /* '' */
+.icon-thumbs-down-1:before { content: '\e806'; } /* '' */
+.icon-doc-text:before { content: '\e807'; } /* '' */
+.icon-comment-empty:before { content: '\f0e5'; } /* '' */
+.icon-help:before { content: '\f128'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
+.icon-user-o:before { content: '\f2c0'; } /* '' */
+.icon-window-restore:before { content: '\f2d2'; } /* '' */
+.icon-window-close-o:before { content: '\f2d4'; } /* '' */

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  searchable: 
+  tsv_content: 
+  tsv_options: MyString
+  post_id: 
+
+two:
+  content: MyString
+  searchable: 
+  tsv_content: 
+  tsv_options: MyString
+  post_id: 

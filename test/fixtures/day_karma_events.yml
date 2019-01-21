@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day_karma_stat_id: 
+  up_count: 1
+  down_count: 1
+  source_id: 
+  source_type: Source
+  event_type: 1
+  user_id: 
+
+two:
+  day_karma_stat_id: 
+  up_count: 1
+  down_count: 1
+  source_id: 
+  source_type: Source
+  event_type: 1
+  user_id: 

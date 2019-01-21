@@ -1,0 +1,7 @@
+
+<h1>Wanna login? go!</h1>
+<p>
+  To login login, just follow this link: <%= link_to "login and activate", URI.encode("http://localhost:3000/sessions/login_via_link/#{@login_link}?email=#{@user.user_credential.email}") %>.
+</p>
+<p>Thanks for joining and have a great day!</p>
+ 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  up_count: 1
+  down_count: 1
+
+two:
+  user_id: 
+  up_count: 1
+  down_count: 1

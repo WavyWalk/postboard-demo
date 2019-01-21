@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post_vote_poll_id: 
+  content: MyText
+  count: 
+
+two:
+  post_vote_poll_id: 
+  content: MyText
+  count: 

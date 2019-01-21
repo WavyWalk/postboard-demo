@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scale: 1
+  p_t_personality_id: 
+  test_question_id: 
+
+two:
+  scale: 1
+  p_t_personality_id: 
+  test_question_id: 

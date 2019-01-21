@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  discussion_message_karma_id: 
+  user_id: 
+  amount: 1
+  cancel_type: MyString
+
+two:
+  discussion_message_karma_id: 
+  user_id: 
+  amount: 1
+  cancel_type: MyString

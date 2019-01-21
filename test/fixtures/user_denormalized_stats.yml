@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subscribers_count: 1
+  comments_count: 1
+  karma_count: 1
+  posts_count: 1
+
+two:
+  subscribers_count: 1
+  comments_count: 1
+  karma_count: 1
+  posts_count: 1

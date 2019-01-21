@@ -1,0 +1,7 @@
+
+    <h1>Welcome to estzhe!</h1>
+    <p>
+      To login login and activate your account, just follow this link: <%= link_to "login and activate", URI.encode("http://localhost:3000/users/account_activation/#{@activation_string}?email=#{@user_credential.email}") %>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+ 

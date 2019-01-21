@@ -1,0 +1,41 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: estzhe_development
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: estzhe_production
+  pool: 15
+  username: abc_dent
+  password: CpbXko8geL
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: estzhe_test
+  pool: 5
+  username: postgres
+  password: postres

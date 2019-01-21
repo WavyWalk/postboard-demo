@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  node_id: 
+  node_type: Node
+  post_id: 
+
+two:
+  node_id: 
+  node_type: Node
+  post_id: 

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  media_id: 
+  media_type: Media
+  post_test_id: 
+
+two:
+  title: MyText
+  media_id: 
+  media_type: Media
+  post_test_id: 

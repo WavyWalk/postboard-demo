@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  media_story_id: 
+  m_id: 
+  m_type: M
+  annotation: MyText
+
+two:
+  media_story_id: 
+  m_id: 
+  m_type: M
+  annotation: MyText
