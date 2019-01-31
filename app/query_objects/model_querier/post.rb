@@ -34,7 +34,7 @@ class ModelQuerier::Post
   end
 
   def fresh_ids
-    PostKarma.where('count < 50 and created_at > ?', 2.days.ago).order('random()').limit(3).pluck(:post_id)
+    PostKarma.where('count < 50 and created_at > ?', 5.days.ago).order('random()').limit(3).pluck(:post_id)
   end
 
   def hot_post_karmas_select_id(pagination_options)

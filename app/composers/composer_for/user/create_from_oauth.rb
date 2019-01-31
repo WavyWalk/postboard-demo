@@ -6,7 +6,6 @@ class ComposerFor::User::CreateFromOauth < ComposerFor::Base
     @omniauth_hash = omniauth_hash
     @controller = controller
     @params = params
-    byebug
   end
 
   def before_compose

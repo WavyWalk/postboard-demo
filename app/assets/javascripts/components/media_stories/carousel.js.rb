@@ -13,6 +13,7 @@ module Components
       end
 
       def render
+        `console.log(#{props})`
         t(:div, {className: 'MediaStories-Carousel'},
           t(:div, {className: 'navigationBtn', onClick: ->{move_to_prev_offset}},
             t(:div, {},
@@ -24,12 +25,13 @@ module Components
             t(:div, 
               {
                 className: "individualThumb #{active}", 
-                onClick: ->{emit(:on_select, index)}
+                onClick: ->{emit(:on_select, index)},
+                key: media_story_node
               },
               show_thumb(media_story_node.media)
             )
           end,
-          if n_prop(:hide_add_button_flag)
+          if n_prop(:show_add_button)
             t(:div, {className: 'individualThumb'},
               t(:button, {onClick: ->{emit(:on_add)}}, 'add')
             )
@@ -59,7 +61,7 @@ module Components
         when PostGif
           t(Components::PostGifs::Show, {post_gif: media, no_playback: true})
         else
-          nil
+          t(:p, {}, "text content")
         end
       end
 

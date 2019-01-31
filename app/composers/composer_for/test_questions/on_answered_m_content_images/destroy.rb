@@ -30,12 +30,7 @@ class ComposerFor::TestQuestions::OnAnsweredMContentImages::Destroy < ComposerFo
 
   def resolve_fail(e)
     
-    case e
-    when  
-    
-    else
-      raise e
-    end
+    raise e
 
   end
 

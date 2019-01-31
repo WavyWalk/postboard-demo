@@ -10,7 +10,7 @@ window.Zepto = (function() {
     tagExpanderRE = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/ig,
     rootNodeRE = /^(?:body|html)$/i,
     capitalRE = /([A-Z])/g,
-
+    stop = function(){},
     // special attributes that should be get/set via method calls
     methodAttributes = ['val', 'css', 'html', 'text', 'data', 'width', 'height', 'offset'],
 
@@ -158,7 +158,7 @@ window.Zepto = (function() {
     dom.selector = selector || ''
     return dom
   }
-
+  zepto.stop = function(){};
   // `$.zepto.isZ` should return `true` if the given object is a Zepto
   // collection. This method can be overriden in plugins.
   zepto.isZ = function(object) {
@@ -710,6 +710,39 @@ window.Zepto = (function() {
         return this.test(className(el))
       }, classRE(name))
     },
+    stop: function(){
+
+    },
+      slideDown: function(){
+
+      },
+      slideUp: function(){
+
+      },
+      slideToggle: function(){
+
+      },
+      fadeIn: function(){
+
+      },
+      fadeOut: function(){
+
+      },
+      fadeToggle: function(){
+
+      },
+      outerWidth: function(){
+
+      },
+      innerWidth: function(){
+
+      },
+      outerHeight: function(){
+
+      },
+      innerHeight: function(){
+
+      },
     addClass: function(name){
       if (!name) return this
       return this.each(function(idx){
@@ -1453,6 +1486,8 @@ window.$ === undefined && (window.$ = Zepto)
     }
   }
 
+  $.stop = function() {}
+
   $.get = function(/* url, data, success, dataType */){
     return $.ajax(parseArguments.apply(null, arguments))
   }
@@ -1597,8 +1632,10 @@ function getCookieByName(a){
     }
     return d[0]
 }
+
+window.$ = $
 //THIS IS ADDED FOR ADDING CSRF TOKEN TO XHR REQUEST
-Zepto(document).on('ajaxBeforeSend', function(event, xhr, settings) {
+$(document).on('ajaxBeforeSend', function(event, xhr, settings) {
   // if (token = getCookieByName('jwt')) {
   //   xhr.setRequestHeader('Authorization', token);
   // };
@@ -1607,4 +1644,3 @@ Zepto(document).on('ajaxBeforeSend', function(event, xhr, settings) {
   };
 });
 
-window.$ = Zepto

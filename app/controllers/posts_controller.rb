@@ -58,8 +58,8 @@ class PostsController < ApplicationController
 
     render plain: Oj.dump(AsJsonSerializer::Post::Index.new(posts: posts + fresh_posts).success << @pagination)
 
-  rescue Exception => e
-    byebug
+  # rescue Exception => e
+  #   byebug
   end
 
 end

@@ -24,7 +24,7 @@ class ModelValidator::OauthCredential < ModelValidator::Base
     _uid = @model.uid
 
     oauth_credential_not_existent = OauthCredential.where(provider: _provider, uid: _uid).first
-    byebug
+    # byebug
     unless oauth_credential_not_existent
       true
     else

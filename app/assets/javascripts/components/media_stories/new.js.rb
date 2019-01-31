@@ -29,7 +29,10 @@ module Components
               media_story_nodes: media_story_nodes,
               node_offset: n_state(:node_offset),
               on_select: event(->(index){on_node_select_to_set_in_view(index)}),
-              on_add: event(->{push_new_node_to_media_nodes}) 
+              on_add: event(->{push_new_node_to_media_nodes}),
+              show_add_button: true,
+              on_move_to_next_offset: event(->{move_to_next_offset(1)}),
+              on_move_to_prev_offset: event(->{move_to_next_offset(-1)})
             }
           ),
           if (ers = n_state(:media_story).errors[:general]) != nil || (ners = n_state(:media_story).errors[:media_story_nodes]) != nil
@@ -61,6 +64,13 @@ module Components
             t(:button, {className: 'submit', onClick: ->{cancel}}, 'cancel')
           )
         )
+      end
+
+      def move_to_next_offset(value)
+        new_offset = n_state(:node_offset) + value
+        if n_state(:media_story).media_story_nodes[new_offset]
+          set_state({node_offset: new_offset})
+        end
       end
 
       def on_node_select_to_set_in_view(index)
